@@ -5,7 +5,7 @@ inquirer
   .prompt([
     {"message" : "Type in your URL", 
     name:"URL"}
-    /* Pass your questions in here */
+    
   ])
   .then((answers) => {
     const url = answers.URL;
@@ -17,15 +17,15 @@ fs.writeFile("URL.txt",url,(err)=>{
     console.log("file is saved now");
 })
  
-// var svg_string = qr.imageSync('I love QR!', { type: 'svg' });
+
     console.log(answers);
-    // Use user feedback for... whatever!!
+    
   })
   .catch((error) => {
     if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
+      
     } else {
-      // Something else went wrong
+     
     }
   });
 
